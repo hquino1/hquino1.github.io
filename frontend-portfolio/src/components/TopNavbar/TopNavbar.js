@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const TopNavbar = () => {
     return (
-        <nav style={{ backgroundColor: '#3A3A3A', height: 60, display: 'flex', position: 'sticky', top: 0, zIndex: 100}}>
+        <nav style={{ backgroundColor: '#3A3A3A', height: 60, display: 'flex', position: 'sticky', top: 0, zIndex: 100, boxShadow: '2px 2px 6px rgba(0, 0, 0, 0.4), -2px -2px 6px rgba(255, 255, 255, 0.1)'}}>
             <h style={{
                 color: 'white',
                 fontSize: 23,
