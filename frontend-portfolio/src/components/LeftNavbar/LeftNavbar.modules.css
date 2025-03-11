@@ -4,9 +4,11 @@
     position: relative;
     list-style: none;
     color: #B0B0B0;
-    font-family: 'Poppins';
     padding: 30px;
     padding-left: 30px;
+    border-bottom: 0.5px solid #89CFF0;
+    border-image-source: linear-gradient(to right, transparent, #B0B0B0, transparent); 
+    border-image-slice: 1;
 }
 
 .sectionLi{
@@ -15,4 +17,28 @@
     height: 50px;
     font-size: 40;
     align-items: center;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.leftFooter{
+    width: '100%';
+    height: 40;
+    padding-left: 30px;
+}
+
+.linkCard{
+    height: 32px;
+    width: 32px;
+    outline: 0.5px solid #7A7A7A;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft white shadow */
+}
+
+.linkCard:hover{
+    background-color: #89CFF0;
+    cursor: pointer;
 }
