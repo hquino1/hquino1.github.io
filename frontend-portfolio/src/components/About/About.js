@@ -83,7 +83,7 @@ const About = () => {
                     </div>
                     <div className="intro-box">
                         <h1 style={{ color: 'white', marginLeft: 30, fontFamily: 'Poppins', fontSize: 35, marginBottom: 5, marginTop: '10vh'}}>
-                            <span style={{ color: 'white' }}>I'm</span>
+    <span style={{ color: 'white' }}>I'm</span>
                             <span style={{ color: 'white' }}> </span>
                             <span style={{ color: '#89CFF0' }}>Hector Quinones</span>
                         </h1>
@@ -104,18 +104,18 @@ const About = () => {
                     </div>
                 </section>
 
-                <section style={{width: '100%', height: '65vh', display: 'flex', flexDirection:'column', color: 'white'}} id="Education">
+                <section className="container-zone" id="Education">
                     <h1 style={{fontSize: 35, marginLeft: 'auto', marginRight: 'auto', fontFamily: 'Poppins', marginBottom: 20}}>Education</h1>
-                    <div style={{gap: 50, height: '100%', width: '100%', display: 'flex', flexDirection: 'column', marginTop: 0}}>
+                    <div className='education-cover'>
                        <div className="education">
-                            <div style={{ width: '30%', display: 'flex', justifyContent: 'center', paddingTop: 50, paddingRight: 20}}>
-                                <img src={utaLogo} style={{height: 150}}></img>
+                            <div className='education-logo'>
+                                <img src={utaLogo} style={{height: 150}} alt='Loading...'></img>
                             </div>
 
-                            <div>
+                            <div className="education-info">
                                 <h1 className="educationHeaders" style={{fontSize: 25, color: '#89CFF0', paddingTop: 30}}>The University of Texas at Arlington</h1>
                                 <h2 className="educationHeaders" style={{fontSize: 20, color: '#B0B0B0', paddingTop: 5}}>Bachelor of Arts in Computer Science</h2>
-                                <div>
+                                <div className="accolades">
                                     <span className="educationSubInfo">
                                         <IoIosSpeedometer color="#89CFF0" style={{height: 15, marginTop: 20}}></IoIosSpeedometer>
                                         <p style={{marginTop: 20, marginBottom: 0, marginLeft: 0}}>Accelerated Program</p>
@@ -123,10 +123,10 @@ const About = () => {
                                     <p style={{margin: 0, paddingLeft: 27, color:'#B0B0B0'}}>On track to graduate in a 3-year span instead of the traditonal 4.</p>
                                 </div>
 
-                                <div>
+                                <div className="accolades">
                                     <span className="educationSubInfo">
                                         <FaGoogleScholar color="#89CFF0" style={{height: 15, marginTop: 20}}></FaGoogleScholar>
-                                        <p style={{marginTop: 20, marginBottom: 0, marginLeft: 0}}>Presedential Scholar</p>
+                                        <p style={{marginTop: 20, marginBottom: 0, marginLeft: 0}}>Presidential Scholar</p>
                                     </span>
                                     <p style={{margin: 0, paddingLeft: 27, color:'#B0B0B0'}}>Have been honored with a prestigous scholarship for outstanding students.</p>
                                 </div>
