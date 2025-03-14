@@ -12,7 +12,7 @@ const LeftNavbar = ({sections, activeSection}) => {
                     const isActive = section.id === activeSection;
                 return (
                         <li key={section.id} className='sectionLi' style={{outline: isActive? '1px solid white' : 'none', boxShadow: isActive? '0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05)' : 'none'}}>
-                            <img src={isActive ? section.iconWhite : section.icon} style={{height: isActive? 30 : 28}} alt='loading...' ></img>
+                            <img src={isActive ? section.iconWhite : section.icon} style={{height: 25}} alt='loading...' ></img>
                             <p style={{fontSize: 20, color: isActive ? 'white' : '#7A7A7A'}}>{section.label}</p>
                         </li>
                     );

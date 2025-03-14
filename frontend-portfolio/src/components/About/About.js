@@ -1,8 +1,8 @@
 import LeftNavbar from "../LeftNavbar/LeftNavbar";
-import introIcon from "../../assets/square-user-round.svg";
-import introWhiteIcon from "../../assets/square-user-roundW.svg";
-import eduIcon from '../../assets/university.svg';
-import eduWhiteIcon from '../../assets/universityW.svg';
+import introIcon from "../../assets/intro-about.svg";
+import introWhiteIcon from "../../assets/intro-aboutWW.svg";
+import eduIcon from '../../assets/edu-about.svg';
+import eduWhiteIcon from '../../assets/edu-aboutW.svg';
 import utaLogo from '../../assets/utaLogo.png';
 import { IoIosSpeedometer } from "react-icons/io";
 import { FaGoogleScholar } from "react-icons/fa6";
