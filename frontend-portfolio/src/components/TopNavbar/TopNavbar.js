@@ -1,6 +1,11 @@
 import { NavLink } from 'react-router-dom';
-
+import './TopNavbar.modules.css';
+import { CiTextAlignJustify } from "react-icons/ci";
+import { useState } from 'react';
 const TopNavbar = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <nav style={{ backgroundColor: '#3A3A3A', height: 60, display: 'flex', position: 'sticky', top: 0, zIndex: 100, boxShadow: '2px 2px 6px rgba(0, 0, 0, 0.4), -2px -2px 6px rgba(255, 255, 255, 0.1)'}}>
             <h style={{
@@ -13,13 +18,20 @@ const TopNavbar = () => {
             }}>
                 Hector Quinones
             </h>
-            <ul style={{
-                listStyle: 'none',
-                width: 250,
-                marginLeft: 'auto',
-                display: 'flex',
-                gap: 15
-            }}>
+            <button className='button' onClick={() => setIsOpen(true)}> <CiTextAlignJustify size={25}> </CiTextAlignJustify> </button>
+            {
+                isOpen && (
+                    <nav className='phone-nav'> 
+                        <ul className='phone-ul'> 
+                            <a href='/'> About </a>
+                            <a href='/Projects'> Projects </a>
+                            <a href='/Skills'> Skills </a>  
+                        </ul>
+                        
+                    </nav> 
+                )
+            }
+            <ul className='list-sections'>
                 <li>
                     <NavLink
                         to="/"

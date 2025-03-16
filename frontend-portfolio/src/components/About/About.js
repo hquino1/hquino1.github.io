@@ -4,6 +4,7 @@ import introWhiteIcon from "../../assets/intro-aboutWW.svg";
 import eduIcon from '../../assets/edu-about.svg';
 import eduWhiteIcon from '../../assets/edu-aboutW.svg';
 import utaLogo from '../../assets/utaLogo.png';
+import portrait from '../../assets/IMG_2912.jpeg';
 import { IoIosSpeedometer } from "react-icons/io";
 import { FaGoogleScholar } from "react-icons/fa6";
 import './About.css';
@@ -76,13 +77,13 @@ const About = () => {
             <LeftNavbar sections={aboutSections} activeSection={activeSection}></LeftNavbar>
             <article className="article-container" >
                 <section className="intro-container" id="Introduction">
-                    <div style={{ width: '50%', height: '100%', alignItems: 'center', justifyContent: 'center', display: 'flex'}}>
-                        <div style={{ width: '70%', height: '70%', marginLeft: 'auto', marginTop: 'auto', marginBottom: 'auto', outline: '1px solid #B0B0B0', borderRadius: 10, marginRight: 40}}>
-
+                    <div className="image-container">
+                        <div className="portrait-container">
+                            <img src={portrait} style={{ height: '90%', objectFit: 'cover', objectPosition: 'bottom', borderRadius: 10, width: '90%'}}></img>
                         </div>
                     </div>
                     <div className="intro-box">
-                        <h1 style={{ color: 'white', marginLeft: 30, fontFamily: 'Poppins', fontSize: 35, marginBottom: 5, marginTop: '10vh'}}>
+                        <h1 className="main-header">
     <span style={{ color: 'white' }}>I'm</span>
                             <span style={{ color: 'white' }}> </span>
                             <span style={{ color: '#89CFF0' }}>Hector Quinones</span>
