@@ -21,29 +21,62 @@
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.linkCard{
+    height: 26px;
+    width: 32px;
+    outline: 0.5px solid #7A7A7A;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* soft white shadow */
+}
+
 .phone-ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    border-bottom: 0.5px solid #89CFF0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-image-source: linear-gradient(to right, transparent, #B0B0B0, transparent); 
-    border-image-slice: 1;
     margin-top: 0;
+    gap: 10px;
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.nav-footer{
+    height: 40px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.phone-li{
+    border-bottom: 1px solid #7a7a7a;
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.phone-li:hover{
+    background-color: #89CFF0;
 }
 
 .phone-nav{
     background-color: #3a3a3a;
     position: absolute;
     top: 60px;
-    margin-left: auto;
-    height: 200px;
-    width: 30%;
+    height: 250px;
+    width: 135px;
     display: flex;
     flex-direction: column;
     color: white;
     font-family: 'Poppins';
+    margin-left: auto;
+    right: 0;
 }
 
 @media (max-width: 545px){

@@ -1,6 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import './TopNavbar.modules.css';
 import { CiTextAlignJustify } from "react-icons/ci";
+import { FaGithubAlt } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdOutlineContactPage } from "react-icons/md";
+import { CgTranscript } from "react-icons/cg";
 import { useState } from 'react';
 const TopNavbar = () => {
 
@@ -18,16 +22,41 @@ const TopNavbar = () => {
             }}>
                 Hector Quinones
             </h>
-            <button className='button' onClick={() => setIsOpen(true)}> <CiTextAlignJustify size={25}> </CiTextAlignJustify> </button>
+            <button className='button' onClick={() => isOpen? setIsOpen(false) : setIsOpen(true)}> <CiTextAlignJustify size={25}> </CiTextAlignJustify> </button>
             {
                 isOpen && (
                     <nav className='phone-nav'> 
                         <ul className='phone-ul'> 
-                            <a href='/'> About </a>
-                            <a href='/Projects'> Projects </a>
-                            <a href='/Skills'> Skills </a>  
+                            <a href='/' className='phone-li'> About </a>
+                            <a href='/Projects' className='phone-li'> Projects </a>
+                            <a href='/Skills' className='phone-li'> Skills </a>  
                         </ul>
                         
+                        <footer style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: 20}}> 
+                            <div className='nav-footer'> 
+                                <h2 style={{fontSize: 10, color: '#7a7a7a'}}> Social Links</h2>
+                                <span style={{display: 'flex', gap: 13, paddingLeft: 5}}> 
+                                    <div className='linkCard'> 
+                                        <FaGithubAlt color='white'> </FaGithubAlt>
+                                    </div>
+                                    <div className='linkCard'> 
+                                        <FaLinkedin color='white'> </FaLinkedin>
+                                    </div>
+                                </span>
+                            </div>
+                            <div className='nav-footer'> 
+                                <h2 style={{fontSize: 10, color: '#7a7a7a'}}> Resume & Transcript</h2>
+                                <span style={{display: 'flex', gap: 13, paddingLeft: 5}}> 
+                                    <div className='linkCard'> 
+                                    <MdOutlineContactPage> </MdOutlineContactPage>
+                                    </div>
+                                    <div className='linkCard'> 
+                                    <CgTranscript> </CgTranscript>
+                                    </div>
+                                </span> 
+                            </div>
+                        </footer>
+
                     </nav> 
                 )
             }
