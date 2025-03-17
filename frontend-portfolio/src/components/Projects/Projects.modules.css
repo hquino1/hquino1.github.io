@@ -1,0 +1,8 @@
+.about-container {
+    background-color: #2C2C2C;
+    min-height: 100vh; /* Ensures it fills the full viewport height */
+    width: 100%; /* Full width */
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
