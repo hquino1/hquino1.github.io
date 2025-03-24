@@ -38,3 +38,15 @@
     gap: 40px;
     padding: 0;
 }
+
+@media (max-width: 1200px){
+    .projects-article-container{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 435px){
+    .projects-intro-container{
+        padding: 30px;
+    }
+}
