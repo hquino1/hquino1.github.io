@@ -1,0 +1,45 @@
+.test{
+    color: red;
+}
+
+.skills-section {
+    background-color: #2C2C2C;
+    min-height: 100vh; /* Ensures it fills the full viewport height */
+    width: 100%; /* Full width */
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.skills-section-container {
+    margin-left: 20%;
+    left: 5px;
+    position: relative;
+    width: 100%;
+    align-items: center;
+}
+
+.skills-intro-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    max-width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.languages-container{
+    background-color: blue;
+    border-radius: 10px;
+    height: 350px;
+    width: 550px;
+    background-color: #3a3a3a;
+    outline: 1px solid #7a7a7a;
+    list-style: none;
+    padding: 10px;
+}
