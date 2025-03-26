@@ -27,11 +27,63 @@ const Skills = () => {
     ];
 
     const [activeSection, setActiveSection] = useState('Languages');
+    useEffect(() => {
+        // Add a small debounce to avoid too many updates
+        let scrollTimeout;
+        
+        const handleScroll = () => {
+            // Clear the timeout if we're still scrolling
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            
+            // Set a small timeout to run after scrolling stops
+            scrollTimeout = setTimeout(() => {
+                // Use a point 1/3 down from the top of the viewport for detection
+                const scrollPosition = window.scrollY + window.innerHeight / 3;
+                
+                // Find which section contains this point
+                let currentSection = null;
+                
+                skillsSections.forEach(section => {
+                    const element = document.getElementById(section.id);
+                    if (!element) return;
+                    
+                    const rect = element.getBoundingClientRect();
+                    const absoluteTop = rect.top + window.scrollY;
+                    const absoluteBottom = rect.bottom + window.scrollY;
+                    
+                    if (scrollPosition >= absoluteTop && scrollPosition <= absoluteBottom) {
+                        currentSection = section.id;
+                    }
+                });
+                
+                // Update the active section if we found one
+                if (currentSection && currentSection !== activeSection) {
+                    setActiveSection(currentSection);
+                    console.log("ACTIVE SECTION CHANGED TO: ", currentSection);
+                }
+            }, 50); // Small delay to let scrolling settle
+        };
+        
+        window.addEventListener('scroll', handleScroll);
+        
+        // Call once at beginning to set initial state
+        handleScroll();
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+        };
+    }, [skillsSections, activeSection]);
+
     return (
         <section className='skills-section'> 
             <LeftNavbar sections={skillsSections} activeSection={activeSection}> </LeftNavbar>
             <article className='skills-section-container'> 
-                <section className='skills-intro-container'> 
+                <section className='skills-intro-container' id='Languages'> 
                     <ul className='languages-container'> 
                         {languages.map((card, index) => (
                             <li key={index}> <RatingCard name={card.name} percentage={card.percentage}> </RatingCard> </li>
@@ -40,7 +92,7 @@ const Skills = () => {
                     </ul>
                 </section>
 
-                <section className='skills-intro-container'> 
+                <section className='skills-intro-container' id='Core Skills'> 
                     <h1 style={{fontSize: 35, marginLeft: 'auto', marginRight: 'auto', fontFamily: 'Poppins', marginBottom: 20}}> Core Skills </h1>
                     <ul className='coreSkills-ul'> 
                         <li className='li-style'> 
