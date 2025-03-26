@@ -9,6 +9,8 @@ import RatingCard from '../RatingCard/RatingCard';
 
 const Skills = () => {
 
+    const swTags = ["Javascript", "React", "Node.js", "Next.js", "Git"];
+
     const languages = [
         {name: 'Python', percentage: '85'},
         {name: 'Javascript', percentage: '80'},
@@ -33,6 +35,25 @@ const Skills = () => {
                             <li key={index}> <RatingCard name={card.name} percentage={card.percentage}> </RatingCard> </li>
                         
                         ))}
+                    </ul>
+                </section>
+
+                <section className='skills-intro-container'> 
+                    <h1 style={{fontSize: 35, marginLeft: 'auto', marginRight: 'auto', fontFamily: 'Poppins', marginBottom: 20}}> Core Skills </h1>
+                    <ul className='coreSkills-ul'> 
+                        <li> 
+                            <div className='coreSkills-container'> 
+                                <h1 className='projectCard-header'> Software Development </h1>
+                                <div className='tag-container'>
+                                    { swTags.map((name, index) => (
+                                        <div className='skillsCard-span-div' index={index}> <h1 className='skills-span-div-title'> {name}</h1></div>
+                
+                                    ))}
+                                </div>
+                            </div>
+                            <div className='coreSkills-container'> </div>
+                            <div className='coreSkills-container'> </div>
+                        </li> 
                     </ul>
                 </section>
             </article>
