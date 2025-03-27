@@ -14,10 +14,10 @@ const Skills = () => {
     const coTags = ["Algorithms & Data Structures", "Object Oriented Programming", "Software Engineering", "Databases", "Programming Languages"];
 
     const languages = [
-        {name: 'Python', percentage: '85'},
-        {name: 'Javascript', percentage: '80'},
+        {name: 'Python', percentage: '95'},
+        {name: 'Javascript', percentage: '90'},
         {name: 'Typescript', percentage: '85'},
-        {name: 'SQL', percentage: '70'},
+        {name: 'SQL', percentage: '85'},
         {name: 'C', percentage: '90'},
     ]
 

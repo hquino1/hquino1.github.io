@@ -9,6 +9,9 @@
     border-bottom: 0.5px solid #89CFF0;
     border-image-source: linear-gradient(to right, transparent, #B0B0B0, transparent); 
     border-image-slice: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .sectionLi{
