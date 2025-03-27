@@ -11,14 +11,14 @@ const Skills = () => {
 
     const swTags = ["Javascript", "React", "Node.js", "Next.js", "Git", "Typescript", "MongoDB", "Frontend", "Backend"];
     const aiTags = ["Convolutional Nueral Networks", "HOG", "SIFT", "Pytorch", "Transfer Learning", "Lightning"];
-    const coTags = ["Algorithms & Data Structures", "Object Oriented Programming", "Software Engineering", "Databases", "Programming Languages"];
+    const coTags = ["Algorithms", "OOP", "Software Engineering", "Databases", "Programming Languages"];
 
     const languages = [
         {name: 'Python', percentage: '95'},
         {name: 'Javascript', percentage: '90'},
         {name: 'Typescript', percentage: '85'},
         {name: 'SQL', percentage: '85'},
-        {name: 'C', percentage: '90'},
+        {name: 'Java', percentage: '80'},
     ]
 
     const skillsSections = [

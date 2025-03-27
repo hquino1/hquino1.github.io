@@ -14,7 +14,7 @@ const ProjectCard = ({title, tags, information}) => {
                 
                 ))}
             </span>
-            <span className='span-git'> <FaGithub color='white'> </FaGithub> Github</span>
+            <span className='span-git'> <FaGithub color='inherit'> </FaGithub> Github</span>
         </div>
     );
 }

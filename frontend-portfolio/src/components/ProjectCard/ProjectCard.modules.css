@@ -89,5 +89,6 @@
 @media (max-width: 435px){
     .projectCard-container{
         height: 310px;
+        width: 100%;
     }
 }

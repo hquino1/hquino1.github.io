@@ -110,3 +110,23 @@
         margin-left: 0;
     }
 }
+
+@media (max-width: 600px){
+    .languages-container{
+        width: 100%;
+    }
+
+    .coreSkills-container{
+        width: 380px;
+    }
+}
+
+@media (max-width: 480px){
+    .coreSkills-container{
+        width: 280px;
+    }
+
+    .skills-intro-container{
+
+    }
+}

@@ -49,4 +49,8 @@
     .projects-intro-container{
         padding: 30px;
     }
+
+    .projects-article-container{
+        left: 0;
+    }
 }
