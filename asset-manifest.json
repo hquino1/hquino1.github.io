@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/Web-Portfolio/static/css/main.8acde657.css",
-    "main.js": "/Web-Portfolio/static/js/main.58e7f1c2.js",
-    "static/js/453.fd14fb0d.chunk.js": "/Web-Portfolio/static/js/453.fd14fb0d.chunk.js",
-    "static/media/IMG_2912.jpeg": "/Web-Portfolio/static/media/IMG_2912.a68e35bb7984d56e9e1f.jpeg",
-    "static/media/utaLogo.png": "/Web-Portfolio/static/media/utaLogo.e8a15606c11c4ec791fa.png",
-    "static/media/llLogo.svg": "/Web-Portfolio/static/media/llLogo.5ad330d0afe125dc9e139cf61c3f0b85.svg",
-    "static/media/llLogoW.svg": "/Web-Portfolio/static/media/llLogoW.45e9052cf44c9d4f1b3db63c2eb1debf.svg",
-    "static/media/coreLogo.svg": "/Web-Portfolio/static/media/coreLogo.7b63b07aced376ac2d94081f065a2a8e.svg",
-    "static/media/coreLogoW.svg": "/Web-Portfolio/static/media/coreLogoW.3fbb00ff639d241d8cc0ab26667d9fa6.svg",
-    "static/media/edu-about.svg": "/Web-Portfolio/static/media/edu-about.df495b781c86888fe3eb429831dabe23.svg",
-    "static/media/edu-aboutW.svg": "/Web-Portfolio/static/media/edu-aboutW.4b6c776436406bfaadf417d605beae5c.svg",
-    "static/media/swLogo.svg": "/Web-Portfolio/static/media/swLogo.59ae2d0c5aa947358fb468d512837c8e.svg",
-    "static/media/swLogoW.svg": "/Web-Portfolio/static/media/swLogoW.cb06644e5af96e14c24c09d8606ce450.svg",
-    "static/media/intro-about.svg": "/Web-Portfolio/static/media/intro-about.88908b51cf6e30fa0d7e19f105f7f1cd.svg",
-    "static/media/intro-aboutWW.svg": "/Web-Portfolio/static/media/intro-aboutWW.45bbb8c930f0052c0d1676d18dcd71bc.svg",
-    "index.html": "/Web-Portfolio/index.html",
-    "static/media/langLogo.svg": "/Web-Portfolio/static/media/langLogo.e4b42fe5ee7ccd029743c79031e68467.svg",
-    "static/media/langLogoW.svg": "/Web-Portfolio/static/media/langLogoW.95999c68c59a79176800899b734df1c4.svg",
-    "main.8acde657.css.map": "/Web-Portfolio/static/css/main.8acde657.css.map",
-    "main.58e7f1c2.js.map": "/Web-Portfolio/static/js/main.58e7f1c2.js.map",
-    "453.fd14fb0d.chunk.js.map": "/Web-Portfolio/static/js/453.fd14fb0d.chunk.js.map"
+    "main.css": "/static/css/main.8acde657.css",
+    "main.js": "/static/js/main.2aff7f1f.js",
+    "static/js/453.fd14fb0d.chunk.js": "/static/js/453.fd14fb0d.chunk.js",
+    "static/media/IMG_2912.jpeg": "/static/media/IMG_2912.a68e35bb7984d56e9e1f.jpeg",
+    "static/media/utaLogo.png": "/static/media/utaLogo.e8a15606c11c4ec791fa.png",
+    "static/media/llLogo.svg": "/static/media/llLogo.5ad330d0afe125dc9e139cf61c3f0b85.svg",
+    "static/media/llLogoW.svg": "/static/media/llLogoW.45e9052cf44c9d4f1b3db63c2eb1debf.svg",
+    "static/media/coreLogo.svg": "/static/media/coreLogo.7b63b07aced376ac2d94081f065a2a8e.svg",
+    "static/media/coreLogoW.svg": "/static/media/coreLogoW.3fbb00ff639d241d8cc0ab26667d9fa6.svg",
+    "static/media/edu-about.svg": "/static/media/edu-about.df495b781c86888fe3eb429831dabe23.svg",
+    "static/media/edu-aboutW.svg": "/static/media/edu-aboutW.4b6c776436406bfaadf417d605beae5c.svg",
+    "static/media/swLogo.svg": "/static/media/swLogo.59ae2d0c5aa947358fb468d512837c8e.svg",
+    "static/media/swLogoW.svg": "/static/media/swLogoW.cb06644e5af96e14c24c09d8606ce450.svg",
+    "static/media/intro-about.svg": "/static/media/intro-about.88908b51cf6e30fa0d7e19f105f7f1cd.svg",
+    "static/media/intro-aboutWW.svg": "/static/media/intro-aboutWW.45bbb8c930f0052c0d1676d18dcd71bc.svg",
+    "index.html": "/index.html",
+    "static/media/langLogo.svg": "/static/media/langLogo.e4b42fe5ee7ccd029743c79031e68467.svg",
+    "static/media/langLogoW.svg": "/static/media/langLogoW.95999c68c59a79176800899b734df1c4.svg",
+    "main.8acde657.css.map": "/static/css/main.8acde657.css.map",
+    "main.2aff7f1f.js.map": "/static/js/main.2aff7f1f.js.map",
+    "453.fd14fb0d.chunk.js.map": "/static/js/453.fd14fb0d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8acde657.css",
-    "static/js/main.58e7f1c2.js"
+    "static/js/main.2aff7f1f.js"
   ]
 }
