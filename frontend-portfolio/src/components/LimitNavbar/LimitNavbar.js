@@ -21,12 +21,17 @@ const LimitNavbar = ({sections, activeSection}) => {
             <footer className='leftFooter'>
                 <h2 style={{color: '#B0B0B0', fontFamily: 'Poppins', fontWeight: 'lighter', fontSize: 17}}>Social Links</h2>
                 <span style={{display: 'flex', gap: '13px'}}>
-                    <div className='linkCard'>
-                        <FaGithubAlt color='white'></FaGithubAlt>
-                    </div>
-                    <div className='linkCard'>
-                        <FaLinkedin color='white'></FaLinkedin>
-                    </div>
+                    <a href='https://github.com/hquino1'>
+                        <div className='linkCard'>
+                            <FaGithubAlt color='white'></FaGithubAlt>
+                        </div>
+                    </a>
+
+                    <a href='https://linkedin.com/in/hectorquino'>
+                        <div className='linkCard'>
+                            <FaLinkedin color='white'></FaLinkedin>
+                        </div>
+                    </a>
                 </span>
 
                 <h2 style={{color: '#B0B0B0', fontFamily: 'Poppins', fontWeight: 'lighter', fontSize: 17}}>Resume & Transcript</h2>

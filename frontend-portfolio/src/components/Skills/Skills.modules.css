@@ -119,11 +119,19 @@
     .coreSkills-container{
         width: 380px;
     }
+
+    .skills-intro-container{
+        padding: 20px;
+    }
 }
 
 @media (max-width: 480px){
     .coreSkills-container{
-        width: 280px;
+        width: 270px;
+    }
+
+    .skillsCard-span-div{
+        font-size: 11px;
     }
 
 }

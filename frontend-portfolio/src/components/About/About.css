@@ -162,13 +162,17 @@
 
     .intro-container{
         flex-direction: column;
-        justify-content: left;
+        justify-content: center;
         align-items: center;
         font-size: smaller;
         height: 50%;
     }
 
     .intro-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: start;
         width: 100%;
     }
 
@@ -219,7 +223,17 @@
 
     .main-header{
         margin-top: 0;
-        font-size: 32px;
+        font-size: 29px;
+        margin-left: 0;
+    }
+
+    .intro-sub{
+       margin-left: 0;
+    }
+
+    .main-header{
+        padding: 0;
+        margin: 0;
     }
 }
 

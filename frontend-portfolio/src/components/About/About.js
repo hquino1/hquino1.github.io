@@ -92,16 +92,18 @@ const About = () => {
                             I'm a student currently exploring my passion for software engineering. I enjoy learning about web development, algorithms, and building projects that solve real-world problems.
                         </p>
                         <h2 style={{color: '#89CFF0', marginLeft: 30, fontFamily: 'Poppins'}}>Additional Info</h2>
+                        <div>
                         <p style={{fontFamily: 'Poppins', marginLeft: 30, color: '#B0B0B0'}}>
                             <span>Email</span>
-                            <span style={{padding: 50}}>:</span>
+                            <span style={{marginRight: 39}}>:</span>
                             <span>quinonhector1@gmail.com</span>
                         </p>
                         <p style={{fontFamily: 'Poppins', marginLeft: 30, color: '#B0B0B0'}}>
                             <span>Github</span>
-                            <span style={{padding: 40}}>:</span>
+                            <span style={{marginRight: 30}}>:</span>
                             <span>hquino1</span>
                         </p>
+                        </div>
                     </div>
                 </section>
 

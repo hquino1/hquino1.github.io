@@ -36,9 +36,11 @@ const LeftNavbar = ({sections, activeSection}) => {
 
                 <h2 style={{color: '#B0B0B0', fontFamily: 'Poppins', fontWeight: 'lighter', fontSize: 17}}>Resume & Transcript</h2>
                 <span style={{display: 'flex', gap: '13px'}}>
-                    <div className='linkCard'>
-                        <MdOutlineContactPage color='white'></MdOutlineContactPage>
-                    </div>
+                    <a href='https://github.com/hquino1/portfolio-content/blob/main/Hector_Quinones_Resume.pdf'>
+                        <div className='linkCard'>
+                            <MdOutlineContactPage color='white'></MdOutlineContactPage>
+                        </div>
+                    </a>
                     <div className='linkCard'>
                         <CgTranscript color='white'></CgTranscript>
                     </div>

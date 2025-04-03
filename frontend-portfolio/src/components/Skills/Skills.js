@@ -119,7 +119,7 @@ const Skills = () => {
                         </li>
                         <li className='li-style'>
                             <div className='coreSkills-container'> 
-                                <h1 className='projectCard-header'> Relevant Courses & Material </h1>
+                                <h1 className='projectCard-header'> Relevant Courses </h1>
                                 <div className='tag-container'>
                                     { coTags.map((name, index) => (
                                         <div className='skillsCard-span-div' index={index}> <h1 className='skills-span-div-title'> {name}</h1></div>

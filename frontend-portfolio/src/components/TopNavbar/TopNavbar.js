@@ -28,28 +28,35 @@ const TopNavbar = () => {
                     <nav className='phone-nav'> 
                         <ul className='phone-ul'> 
                             <a href='/' className='phone-li'> About </a>
-                            <a href='/Projects' className='phone-li'> Projects </a>
-                            <a href='/Skills' className='phone-li'> Skills </a>  
+                            <a href='/projects' className='phone-li'> Projects </a>
+                            <a href='/skills' className='phone-li'> Skills </a>  
                         </ul>
                         
                         <footer style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: 20}}> 
                             <div className='nav-footer'> 
                                 <h2 style={{fontSize: 10, color: '#7a7a7a'}}> Social Links</h2>
                                 <span style={{display: 'flex', gap: 13, paddingLeft: 5}}> 
-                                    <div className='linkCard'> 
-                                        <FaGithubAlt color='white'> </FaGithubAlt>
-                                    </div>
-                                    <div className='linkCard'> 
-                                        <FaLinkedin color='white'> </FaLinkedin>
-                                    </div>
+                                    <a href='https://github.com/hquino1'>
+                                        <div className='linkCard'> 
+                                            <FaGithubAlt color='white'> </FaGithubAlt>
+                                        </div>
+                                    </a>
+
+                                    <a href='https://linkedin.com/in/hectorquino'>
+                                        <div className='linkCard'> 
+                                            <FaLinkedin color='white'> </FaLinkedin>
+                                        </div>
+                                    </a>
                                 </span>
                             </div>
                             <div className='nav-footer'> 
                                 <h2 style={{fontSize: 10, color: '#7a7a7a'}}> Resume & Transcript</h2>
                                 <span style={{display: 'flex', gap: 13, paddingLeft: 5}}> 
-                                    <div className='linkCard'> 
-                                    <MdOutlineContactPage> </MdOutlineContactPage>
-                                    </div>
+                                    <a href='https://github.com/hquino1/portfolio-content/blob/main/Hector_Quinones_Resume.pdf'>
+                                        <div className='linkCard'> 
+                                            <MdOutlineContactPage> </MdOutlineContactPage>
+                                        </div>
+                                    </a>
                                     <div className='linkCard'> 
                                     <CgTranscript> </CgTranscript>
                                     </div>
@@ -77,7 +84,7 @@ const TopNavbar = () => {
                 </li>
                 <li>
                     <NavLink
-                        to="/Projects"
+                        to="/projects"
                         style={({ isActive }) => ({
                             textDecoration: 'none',
                             color: isActive ? 'white' : '#7A7A7A',
@@ -91,7 +98,7 @@ const TopNavbar = () => {
                 </li>
                 <li>
                     <NavLink
-                        to="/Skills"
+                        to="/skills"
                         style={({ isActive }) => ({
                             textDecoration: 'none',
                             color: isActive ? 'white' : '#7A7A7A',
