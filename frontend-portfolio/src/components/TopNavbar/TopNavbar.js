@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineContactPage } from "react-icons/md";
 import { CgTranscript } from "react-icons/cg";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const TopNavbar = () => {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -27,14 +28,14 @@ const TopNavbar = () => {
                 isOpen && (
                     <nav className='phone-nav'> 
                         <ul className='phone-ul'> 
-                            <a href='/' className='phone-li'> About </a>
-                            <a href='/projects' className='phone-li'> Projects </a>
-                            <a href='/skills' className='phone-li'> Skills </a>  
+                            <li><Link to="/" className='phone-li'>About</Link></li>
+                            <li><Link to="/projects" className='phone-li'>Projects</Link></li>
+                            <li><Link to="/skills" className='phone-li'>Skills</Link></li> 
                         </ul>
                         
-                        <footer style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: 20}}> 
+                        <footer style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: 20, marginTop: 10}}> 
                             <div className='nav-footer'> 
-                                <h2 style={{fontSize: 10, color: '#7a7a7a'}}> Social Links</h2>
+                                <h2 style={{fontSize: 10, color: '#7a7a7a', top: 10}}> Social Links</h2>
                                 <span style={{display: 'flex', gap: 13, paddingLeft: 5}}> 
                                     <a href='https://github.com/hquino1'>
                                         <div className='linkCard'> 
