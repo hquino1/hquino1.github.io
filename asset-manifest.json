@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f4f92a5.css",
-    "main.js": "/static/js/main.b25dcabf.js",
+    "main.css": "/static/css/main.ec60bfc5.css",
+    "main.js": "/static/js/main.cfef26c2.js",
     "static/js/453.fd14fb0d.chunk.js": "/static/js/453.fd14fb0d.chunk.js",
     "static/media/IMG_2912.jpeg": "/static/media/IMG_2912.a68e35bb7984d56e9e1f.jpeg",
     "static/media/utaLogo.png": "/static/media/utaLogo.e8a15606c11c4ec791fa.png",
@@ -18,12 +18,12 @@
     "index.html": "/index.html",
     "static/media/langLogo.svg": "/static/media/langLogo.e4b42fe5ee7ccd029743c79031e68467.svg",
     "static/media/langLogoW.svg": "/static/media/langLogoW.95999c68c59a79176800899b734df1c4.svg",
-    "main.3f4f92a5.css.map": "/static/css/main.3f4f92a5.css.map",
-    "main.b25dcabf.js.map": "/static/js/main.b25dcabf.js.map",
+    "main.ec60bfc5.css.map": "/static/css/main.ec60bfc5.css.map",
+    "main.cfef26c2.js.map": "/static/js/main.cfef26c2.js.map",
     "453.fd14fb0d.chunk.js.map": "/static/js/453.fd14fb0d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f4f92a5.css",
-    "static/js/main.b25dcabf.js"
+    "static/css/main.ec60bfc5.css",
+    "static/js/main.cfef26c2.js"
   ]
 }
