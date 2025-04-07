@@ -28,42 +28,24 @@ const TopNavbar = () => {
                 isOpen && (
                     <nav className='phone-nav'> 
                         <ul className='phone-ul'> 
-                            <li><Link to="/" className='phone-li'>About</Link></li>
-                            <li><Link to="/projects" className='phone-li'>Projects</Link></li>
-                            <li><Link to="/skills" className='phone-li'>Skills</Link></li> 
+                            <li><Link to="/" className='phone-li' style={{fontWeight: 'bold', padding: '20'}}>About</Link></li>
+                            <li><Link to="/projects" className='phone-li' style={{fontWeight: 'bold'}}>Projects</Link></li>
+                            <li><Link to="/skills" className='phone-li' style={{fontWeight: 'bold'}}>Skills</Link></li> 
+                            <li><a href='https://github.com/hquino1' className='phone-li' style={{color: "#89CFF0", fontWeight: 'lighter'}}>Github
+                                <FaGithubAlt color='white' size={15}> </FaGithubAlt>
+                                </a>
+                            </li> 
+                            <li><a href='https://linkedin.com/in/hectorquino' className='phone-li' style={{color: "#89CFF0", fontWeight: 'lighter'}}>LinkedIn
+                                <FaLinkedin color='white' size={15}> </FaLinkedin>
+                                </a>
+                            </li>
+                            <li><a href='https://github.com/hquino1/portfolio-content/blob/main/Hector_Quinones_Resume.pdf' className='phone-li' style={{color: "#89CFF0", fontWeight: 'lighter', outline: 'none'}}>Resume
+                                <MdOutlineContactPage color='white' size={15}> </MdOutlineContactPage>
+                                </a>
+                            </li>
                         </ul>
                         
-                        <footer style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: 20, marginTop: 10}}> 
-                            <div className='nav-footer'> 
-                                <h2 style={{fontSize: 10, color: '#7a7a7a', top: 10}}> Social Links</h2>
-                                <span style={{display: 'flex', gap: 13, paddingLeft: 5}}> 
-                                    <a href='https://github.com/hquino1'>
-                                        <div className='linkCard'> 
-                                            <FaGithubAlt color='white'> </FaGithubAlt>
-                                        </div>
-                                    </a>
-
-                                    <a href='https://linkedin.com/in/hectorquino'>
-                                        <div className='linkCard'> 
-                                            <FaLinkedin color='white'> </FaLinkedin>
-                                        </div>
-                                    </a>
-                                </span>
-                            </div>
-                            <div className='nav-footer'> 
-                                <h2 style={{fontSize: 10, color: '#7a7a7a'}}> Resume & Transcript</h2>
-                                <span style={{display: 'flex', gap: 13, paddingLeft: 5}}> 
-                                    <a href='https://github.com/hquino1/portfolio-content/blob/main/Hector_Quinones_Resume.pdf'>
-                                        <div className='linkCard'> 
-                                            <MdOutlineContactPage> </MdOutlineContactPage>
-                                        </div>
-                                    </a>
-                                    <div className='linkCard'> 
-                                    <CgTranscript> </CgTranscript>
-                                    </div>
-                                </span> 
-                            </div>
-                        </footer>
+                        
 
                     </nav> 
                 )
