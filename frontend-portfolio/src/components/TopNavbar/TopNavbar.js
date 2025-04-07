@@ -4,6 +4,10 @@ import { CiTextAlignJustify } from "react-icons/ci";
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineContactPage } from "react-icons/md";
+import { FaStackExchange } from "react-icons/fa";
+import { RiInformation2Fill } from "react-icons/ri";
+import { AiFillCode } from "react-icons/ai";
+import { AiFillFund } from "react-icons/ai";
 import { CgTranscript } from "react-icons/cg";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -28,19 +32,31 @@ const TopNavbar = () => {
                 isOpen && (
                     <nav className='phone-nav'> 
                         <ul className='phone-ul'> 
-                            <li><Link to="/" className='phone-li' style={{fontWeight: 'bold', padding: '20'}}>About</Link></li>
-                            <li><Link to="/projects" className='phone-li' style={{fontWeight: 'bold'}}>Projects</Link></li>
-                            <li><Link to="/skills" className='phone-li' style={{fontWeight: 'bold'}}>Skills</Link></li> 
-                            <li><a href='https://github.com/hquino1' className='phone-li' style={{color: "#89CFF0", fontWeight: 'lighter'}}>Github
-                                <FaGithubAlt color='white' size={15}> </FaGithubAlt>
+                            <li><Link to="/" className='phone-li' style={{padding: '20', color: '#b0b0b0'}}>
+                                <FaStackExchange size={15}> </FaStackExchange>About
+                            </Link></li>
+                            <li><Link to="/projects" className='phone-li' style={{color: '#b0b0b0'}}>
+                                <AiFillCode size={15}> </AiFillCode>Projects
+                            </Link></li>
+                            <li><Link to="/skills" className='phone-li' style={{color: '#b0b0b0'}}>
+                                <AiFillFund size={15}> </AiFillFund>Skills
+                            </Link></li> 
+                            <li>
+                                <a href='https://github.com/hquino1' className='phone-li' style={{color: "#b0b0b0", fontWeight: 'lighter'}}>
+                                    <FaGithubAlt color='#b0b0b0' size={15}> </FaGithubAlt>
+                                    Github
                                 </a>
                             </li> 
-                            <li><a href='https://linkedin.com/in/hectorquino' className='phone-li' style={{color: "#89CFF0", fontWeight: 'lighter'}}>LinkedIn
-                                <FaLinkedin color='white' size={15}> </FaLinkedin>
+                            <li>
+                                <a href='https://linkedin.com/in/hectorquino' className='phone-li' style={{color: "#b0b0b0", fontWeight: 'lighter'}}>
+                                    <FaLinkedin color='#b0b0b0' size={15}> </FaLinkedin>
+                                    LinkedIn
                                 </a>
                             </li>
-                            <li><a href='https://github.com/hquino1/portfolio-content/blob/main/Hector_Quinones_Resume.pdf' className='phone-li' style={{color: "#89CFF0", fontWeight: 'lighter', outline: 'none'}}>Resume
-                                <MdOutlineContactPage color='white' size={15}> </MdOutlineContactPage>
+                            <li>
+                                <a href='https://github.com/hquino1/portfolio-content/blob/main/Hector_Quinones_Resume.pdf' className='phone-li' style={{color: "#b0b0b0", fontWeight: 'lighter', outline: 'none', boxShadow: 'none'}}>
+                                    <RiInformation2Fill color='#b0b0b0' size={15}> </RiInformation2Fill>
+                                    Resume
                                 </a>
                             </li>
                         </ul>
