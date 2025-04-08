@@ -3,6 +3,8 @@ import './TopNavbar.modules.css';
 import { CiTextAlignJustify } from "react-icons/ci";
 import { FaGithubAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { IoMenu } from "react-icons/io5";
+import { TbMenu2 } from "react-icons/tb";
 import { MdOutlineContactPage } from "react-icons/md";
 import { FaStackExchange } from "react-icons/fa";
 import { RiInformation2Fill } from "react-icons/ri";
@@ -27,7 +29,7 @@ const TopNavbar = () => {
             }}>
                 Hector Quinones
             </h>
-            <button className='button' onClick={() => isOpen? setIsOpen(false) : setIsOpen(true)}> <CiTextAlignJustify size={25}> </CiTextAlignJustify> </button>
+            <button className='button' onClick={() => isOpen? setIsOpen(false) : setIsOpen(true)}> <TbMenu2 size={25} color='f5f7fa'> </TbMenu2> </button>
             {
                 isOpen && (
                     <nav className='phone-nav'> 
