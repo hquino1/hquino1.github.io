@@ -14,11 +14,13 @@ function App() {
   return (
     <div className='w-full h-full bg-[#F9FAFB] dark:bg-[#0F172A] flex'>
       <Navigation />
-      <Routes>
-        <Route path='/' element={<About />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/skills' element={<Skills />} />
-      </Routes>
+      <div class="flex-1 p-8 overflow-y-auto">
+        <Routes>
+          <Route path='/' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/skills' element={<Skills />} />
+        </Routes>
+      </div>
     </div>
   )
 }
