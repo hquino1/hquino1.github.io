@@ -10,11 +10,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
 
-const Navigation = () => {
+const LimitedNavigation = () => {
 
   const [isDark, setIsDark] = useState(false)
 
   function toggleDarkMode() {
+    console.log("BUTTON CLICKED");
     if (!isDark){
       document.documentElement.classList.add('dark'); // Adds/removes the class on <html>
       setIsDark(true)
@@ -28,7 +29,7 @@ const Navigation = () => {
     
     <> 
       {/* Desktop navigation */}
-      <nav class="dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-72 p-7 font-[Outfit] hidden 2xl:block">
+      <nav className="dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-72 p-7 font-[Outfit] z-50 fixed">
         <NavigationItem name={"About"} Icon={IoPerson} to={"/"}/>
         <NavigationItem name={"Projects"} Icon={AiFillCode} to={"/projects"}/>
         <NavigationItem name={"Skills"} Icon={AiFillRocket} to={"/skills"}/>
@@ -49,4 +50,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation;
+export default LimitedNavigation;

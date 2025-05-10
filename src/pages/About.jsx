@@ -1,4 +1,7 @@
 import headshot from '../assets/IMG_2912.jpeg'
+import logo from '../assets/utaLogo.png'
+import { BsFillLightningChargeFill } from "react-icons/bs";
+import { IoSchool } from "react-icons/io5";
 
 function About() {
   return (
@@ -18,7 +21,34 @@ function About() {
           </div>
         </div>
       </div>
-      <hr className="border-t border-gray-300 dark:border-gray-700 mx-7 mb-5" />
+      <hr className="border-t border-gray-300 dark:border-gray-700 mx-7 mb-20" />
+
+      <h1 class="text-2xl mb-10 font-[Montserrat] font-bold"> Education </h1>
+      <div class="h-auto flex mb-20"> 
+        <div className='h-auto w-100 flex-col'> 
+          <img src={logo} className='w-55 h-60 mx-auto mb-5'></img>
+          <div className='w-fit h-6 pl-3 pr-3 rounded-xl mx-auto dark:bg-[#1E293B] bg-[#E5E7EB] text-center justify-center items-center text-sm'>3.7 GPA</div>
+        </div>
+
+        <div className='h-1/2 w-full ml-10 mt-5'>
+          <h1 class="text-4xl mb-1 font-[Montserrat] font-bold">University of Texas at Arlington</h1>
+          <h2 className='font-[Montserrat] font-bold mb-5'>B.S. in Computer Science, College of Engineering</h2>
+          <div>
+            <div className='flex items-center text-lg'>
+              <BsFillLightningChargeFill className='mr-3'></BsFillLightningChargeFill>
+              Accelerated Program
+            </div>
+            <h1 className='font-[Outfit] ml-7 mb-5'> On track to graduate in 3 years instead of the traditional 4-year program.</h1>
+
+            <div className='flex items-center text-lg'>
+              <IoSchool className='mr-3'></IoSchool>
+              Presidential Scholar
+            </div>
+            <h1 className='font-[Outfit] ml-7'> Holder of a presidential scholarship, given to prestigious students.</h1>
+          </div>
+        </div>
+
+      </div>
     </div>
   )
 }
