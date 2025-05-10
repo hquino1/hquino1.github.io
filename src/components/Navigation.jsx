@@ -11,19 +11,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
 
 const Navigation = () => {
-
-  const [isDark, setIsDark] = useState(false)
-
-  function toggleDarkMode() {
-    if (!isDark){
-      document.documentElement.classList.add('dark'); // Adds/removes the class on <html>
-      setIsDark(true)
-    }
-    else{
-      document.documentElement.classList.remove('dark'); // Adds/removes the class on <html>
-      setIsDark(false)
-    }
-  }
   return(
     
     <> 
@@ -39,10 +26,6 @@ const Navigation = () => {
         <LinkItem name={"Github"} Icon={FaGithub}/>
         <LinkItem name={"LinkedIn"} Icon={FaLinkedin}/>
         <LinkItem name={"Resume"} Icon={IoIosPaper}/>
-        <button className=' bg-[#F9FAFB] dark:bg-[#0F172A] p-1.5 rounded-full cursor-pointer mb-0' onClick={toggleDarkMode}>
-          {!isDark && <MdNightlight size={22}></MdNightlight>}
-          {isDark && <MdLightMode size={22} color='white'></MdLightMode>}
-        </button>
       </nav>
 
     </>

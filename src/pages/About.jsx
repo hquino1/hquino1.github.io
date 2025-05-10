@@ -1,4 +1,4 @@
-import headshot from '../assets/IMG_2912.jpeg'
+import headshot from '../assets/cropped_headshot.jpg'
 import logo from '../assets/utaLogo.png'
 import { BsFillLightningChargeFill } from "react-icons/bs";
 import { IoSchool } from "react-icons/io5";
@@ -7,8 +7,8 @@ function About() {
   return (
     <div class="text-[#111827] dark:text-[#F1F5F9] w-full h-full p-30 overflow-auto">
       <div class="h-auto flex mb-20">
-        <div class="mr-auto mb-auto h-110 w-110 rounded-lg outline-1 p-5">
-          <img src={headshot} class="w-full h-full object-cover object-bottom rounded-lg"/>
+        <div class="mr-15 mb-auto h-[400px] w-[400px] rounded-lg outline-1 p-5 flex-shrink-0">
+          <img src={headshot} className='object-cover h-full w-full rounded-lg'/>
         </div>
         
         <div class="w-1/2 h-full mt-5 mr-10">
