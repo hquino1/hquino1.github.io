@@ -46,7 +46,7 @@ function App() {
       {showNavbar && <div className='fixed h-full w-full bg-black/50 z-40'></div>}
       {showNavbar && <LimitedNavigation></LimitedNavigation>}
       <Navigation />
-      <div class="flex-1 p-8 overflow-y-auto">
+      <div class="flex-1 sm:p-8 overflow-y-auto">
         <Routes>
           <Route path='/' element={<About />} />
           <Route path='/projects' element={<Projects />} />

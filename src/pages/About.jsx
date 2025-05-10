@@ -5,14 +5,14 @@ import { IoSchool } from "react-icons/io5";
 
 function About() {
   return (
-    <div class="text-[#111827] dark:text-[#F1F5F9] w-full h-full p-30 overflow-auto">
-      <div class="h-auto flex mb-20">
-        <div class="mr-15 mb-auto h-[400px] w-[400px] rounded-lg outline-1 p-5 flex-shrink-0">
+    <div class="text-[#111827] dark:text-[#F1F5F9] w-full h-full pr-0 pl-5 pt-30 pr-5 sm:p-10 lg:p-20 xl:p-30 overflow-auto">
+      <div class="flex flex-col md:flex-row h-auto mb-20">
+        <div className="mr-15 mb-auto h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[300px] lg:w-[300px] xl:h-[400px] xl:w-[400px] rounded-lg outline-1 p-5 flex-shrink-0">
           <img src={headshot} className='object-cover h-full w-full rounded-lg'/>
         </div>
         
-        <div class="w-1/2 h-full mt-5 mr-10">
-          <div class="text-4xl mb-10 font-[Montserrat] font-bold"> I'm Hector Quinones </div>
+        <div class="w-full lg:w-1/2 h-full mt-5 mr-10">
+          <div class="text-3xl lg:text-4xl mb-10 font-[Montserrat] font-bold"> I'm Hector Quinones </div>
           <div class="font-[Outfit] text-xl mb-10"> I'm a student currently exploring my passion for software engineering. I enjoy learning about web development, algorithms, and building projects that solve real-world problems.</div>
           <div> 
             <div class="text-xl mb-5 font-[Montserrat] font-bold"> Additional Info </div>
