@@ -10,8 +10,8 @@ function Projects() {
   ];
 
   return (
-    <div className='text-[#111827] dark:text-[#F1F5F9] w-full h-full pr-0 pl-5 pt-30 pr-5 sm:p-20 lg:p-30 xl:p-30 overflow-auto'> 
-      <ul className='flex flex-wrap justify-between px-15'> 
+    <div className='text-[#111827] dark:text-[#F1F5F9] w-full h-full pr-0 pl-5 pt-30 pr-5 sm:px-20 md:px-10 lg:px-10 xl:px-20 2xl:px-30 overflow-auto'> 
+      <ul className='flex flex-wrap gap-5 md:justify-center'> 
         {projectTags.map((project, index) => (
           <li key={index} className='mb-5'> <ProjectItem name={project.title} info={project.info} tags={project.tags} /> </li>
         ))}
