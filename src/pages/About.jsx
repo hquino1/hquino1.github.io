@@ -7,7 +7,7 @@ function About() {
   return (
     <div class="text-[#111827] dark:text-[#F1F5F9] w-full h-full pr-0 pl-5 pt-30 pr-5 sm:p-10 lg:p-20 xl:p-30 overflow-auto">
       <div class="flex flex-col md:flex-row h-auto mb-20">
-        <div className="mr-15 mb-auto h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[300px] lg:w-[300px] xl:h-[400px] xl:w-[400px] rounded-lg outline-1 p-5 flex-shrink-0">
+        <div className="mr-15 mb-auto h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[300px] lg:w-[300px] xl:h-[400px] xl:w-[400px] rounded-lg outline-1 p-2 md:p-5 flex-shrink-0">
           <img src={headshot} className='object-cover h-full w-full rounded-lg'/>
         </div>
         
@@ -24,14 +24,14 @@ function About() {
       <hr className="border-t border-gray-300 dark:border-gray-700 mx-7 mb-20" />
 
       <h1 class="text-2xl mb-10 font-[Montserrat] font-bold"> Education </h1>
-      <div class="h-auto flex mb-20"> 
+      <div class="h-auto flex flex-col md:flex-row mb-20 items-center md:items-stretch"> 
         <div className='h-auto w-100 flex-col'> 
           <img src={logo} className='w-55 h-60 mx-auto mb-5'></img>
           <div className='w-fit h-6 pl-3 pr-3 rounded-xl mx-auto dark:bg-[#1E293B] bg-[#E5E7EB] text-center justify-center items-center text-sm'>3.7 GPA</div>
         </div>
 
-        <div className='h-1/2 w-full ml-10 mt-5'>
-          <h1 class="text-4xl mb-1 font-[Montserrat] font-bold">University of Texas at Arlington</h1>
+        <div className='h-1/2 w-full md:ml-10 mt-5'>
+          <h1 class="text-3xl md:text-4xl mb-1 font-[Montserrat] font-bold">University of Texas at Arlington</h1>
           <h2 className='font-[Montserrat] font-bold mb-5'>B.S. in Computer Science, College of Engineering</h2>
           <div>
             <div className='flex items-center text-lg'>

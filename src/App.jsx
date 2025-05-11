@@ -36,10 +36,10 @@ function App() {
 
   return (
     <div className='w-full h-full bg-[#F9FAFB] dark:bg-[#0F172A] flex'>
-      <button className='fixed dark:bg-[#1E293B] bg-[#E5E7EB] right-0 mt-5 mr-30 h-12 w-12 rounded-lg justify-center cursor-pointer 2xl:hidden z-60 text-[#111827] dark:text-[#F1F5F9]' onClick={changeNav}>
+      <button className='fixed dark:bg-[#1E293B] bg-[#E5E7EB] right-0 mt-5 mr-20 sm:mr-30 h-12 w-12 rounded-lg justify-center cursor-pointer 2xl:hidden z-60 text-[#111827] dark:text-[#F1F5F9]' onClick={changeNav}>
         <TiThMenu className='mx-auto text-2xl'></TiThMenu>
       </button>
-      <button className=' bg-[#F9FAFB] dark:bg-[#0F172A] p-1.5 rounded-full cursor-pointer fixed right-0 mt-5 mr-15 h-12 w-12 text-[#111827] dark:text-[#F1F5F9]' onClick={toggleDarkMode}>
+      <button className=' dark:bg-[#1E293B] bg-[#E5E7EB] p-1.5 rounded-full cursor-pointer fixed right-0 mt-5 mr-5 sm:mr-15 h-12 w-12 text-[#111827] dark:text-[#F1F5F9] flex items-center justify-center' onClick={toggleDarkMode}>
           {!isDark && <MdNightlight size={22}></MdNightlight>}
           {isDark && <MdLightMode size={22}></MdLightMode>}
       </button>
