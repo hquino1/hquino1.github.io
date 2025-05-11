@@ -39,14 +39,14 @@ function App() {
       <button className='fixed dark:bg-[#1E293B] bg-[#E5E7EB] right-0 mt-5 mr-20 sm:mr-30 h-12 w-12 rounded-lg justify-center cursor-pointer 2xl:hidden z-60 text-[#111827] dark:text-[#F1F5F9]' onClick={changeNav}>
         <TiThMenu className='mx-auto text-2xl'></TiThMenu>
       </button>
-      <button className=' dark:bg-[#1E293B] bg-[#E5E7EB] p-1.5 rounded-full cursor-pointer fixed right-0 mt-5 mr-5 sm:mr-15 h-12 w-12 text-[#111827] dark:text-[#F1F5F9] flex items-center justify-center' onClick={toggleDarkMode}>
+      <button className=' dark:bg-[#1E293B] bg-[#E5E7EB] p-1 rounded-full cursor-pointer fixed right-0 mt-5 mr-5 sm:mr-15 h-12 w-12 text-[#111827] dark:text-[#F1F5F9] flex items-center justify-center' onClick={toggleDarkMode}>
           {!isDark && <MdNightlight size={22}></MdNightlight>}
           {isDark && <MdLightMode size={22}></MdLightMode>}
       </button>
       {showNavbar && <div className='fixed h-full w-full bg-black/50 z-40'></div>}
       {showNavbar && <LimitedNavigation></LimitedNavigation>}
       <Navigation />
-      <div class="flex-1 sm:p-8 overflow-y-auto">
+      <div class="flex-1 sm:px-8 overflow-y-auto">
         <Routes>
           <Route path='/' element={<About />} />
           <Route path='/projects' element={<Projects />} />
