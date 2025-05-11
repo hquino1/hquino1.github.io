@@ -23,9 +23,9 @@ const Navigation = () => {
         <hr className="border-t border-gray-300 dark:border-gray-700 mx-7 mb-5" />
         <h1 className=' mb-5 text-lg text-[#111827] dark:text-[#F1F5F9]'>Social Links</h1>
 
-        <LinkItem name={"Github"} Icon={FaGithub}/>
-        <LinkItem name={"LinkedIn"} Icon={FaLinkedin}/>
-        <LinkItem name={"Resume"} Icon={IoIosPaper}/>
+        <LinkItem name={"Github"} Icon={FaGithub} link={"https://github.com/hquino1"}/>
+        <LinkItem name={"LinkedIn"} Icon={FaLinkedin} link={"https://linkedin.com/in/hectorquino"}/>
+        <LinkItem name={"Resume"} Icon={IoIosPaper} link={"https://github.com/hquino1/portfolio-content/blob/main/Hector_Quinones_Resume.pdf"}/>
       </nav>
 
     </>
