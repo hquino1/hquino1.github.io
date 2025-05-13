@@ -11,18 +11,17 @@ import { Routes, Route } from 'react-router-dom'
 import { TiThMenu } from "react-icons/ti";
 import { MdNightlight } from "react-icons/md";
 import { MdLightMode } from "react-icons/md";
+import { useDarkMode } from "./hooks/useDarkMode.jsx";
 
 function App() {
   const [showNavbar, setShowNavbar] = useState(false)
-  const [isDark, setIsDark] = useState(false)
+  const [isDark, setIsDark] = useDarkMode();
 
   function toggleDarkMode() {
     if (!isDark){
-      document.documentElement.classList.add('dark'); // Adds/removes the class on <html>
       setIsDark(true)
     }
     else{
-      document.documentElement.classList.remove('dark'); // Adds/removes the class on <html>
       setIsDark(false)
     }
   }
@@ -35,7 +34,7 @@ function App() {
   }
 
   return (
-    <div className='transition-colors transition-all duration-1000 w-full h-full bg-[#F9FAFB] dark:bg-[#0F172A] flex'>
+    <div className='transition-colors duration-1000 w-full h-full bg-[#F9FAFB] dark:bg-[#0F172A] flex'>
       <button className='fixed dark:bg-[#1E293B] bg-[#E5E7EB] right-0 mt-5 mr-20 sm:mr-30 h-12 w-12 rounded-lg justify-center cursor-pointer 2xl:hidden z-60 text-[#111827] dark:text-[#F1F5F9]' onClick={changeNav}>
         <TiThMenu className='mx-auto text-2xl'></TiThMenu>
       </button>
