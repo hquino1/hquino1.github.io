@@ -10,12 +10,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoIosPaper } from "react-icons/io";
 
-const LimitedNavigation = () => {
+const LimitedNavigation = ({isVisible}) => {
   return(
     
     <> 
       {/* Desktop navigation */}
-      <nav className="dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-65 p-7 font-[Outfit] z-50 fixed">
+      <nav className={`dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-64 p-7 font-[Outfit] z-50 fixed transition-transform duration-700 ease-in-out ${isVisible ? 'translate-x-0' : '-translate-x-full'}`}>
         <NavigationItem name={"About"} Icon={IoPerson} to={"/"}/>
         <NavigationItem name={"Projects"} Icon={AiFillCode} to={"/projects"}/>
         <NavigationItem name={"Skills"} Icon={AiFillRocket} to={"/skills"}/>
