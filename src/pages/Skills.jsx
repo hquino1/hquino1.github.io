@@ -6,7 +6,7 @@ function Skills() {
   const rcTags = ["Data Structures & Algorithms", "Fundamental of Software Engineering", "Databases", "Programming Languages", "Computer Vision", "Secure Programming", "Artificial Intelligence", "Linear Algebra"]
 
   return (
-    <div className='text-[#111827] dark:text-[#F1F5F9] w-full h-full pr-0 pl-5 pt-30 pr-5 sm:p-10 lg:p-30 xl:p-30 overflow-auto transition duration-600 ease-in-out'> 
+    <div className='text-[#111827] dark:text-[#F1F5F9] w-full h-full pr-0 pl-5 pt-30 pr-5 sm:px-10 md:px-20 lg:px-30 xl:p-30 overflow-auto transition duration-600 ease-in-out'> 
       <div className='flex flex-col md:flex-row items-center justify-center mb-20'> 
         <div className='flex flex-col md:flex-row gap-5'> 
 
