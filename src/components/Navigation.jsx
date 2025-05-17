@@ -16,6 +16,7 @@ const Navigation = () => {
     <> 
       {/* Desktop navigation */}
       <nav class="dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-72 p-7 font-[Outfit] hidden 2xl:block">
+        <h1 className=' mb-5 text-lg text-[#111827] dark:text-[#F1F5F9]'>Main</h1>
         <NavigationItem name={"About"} Icon={IoPerson} to={"/"}/>
         <NavigationItem name={"Projects"} Icon={AiFillCode} to={"/projects"}/>
         <NavigationItem name={"Skills"} Icon={AiFillRocket} to={"/skills"}/>

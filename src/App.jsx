@@ -45,7 +45,7 @@ function App() {
       {showNavbar && <div className='fixed h-full w-full bg-black/50 z-40'></div>}
       {<LimitedNavigation isVisible={showNavbar}></LimitedNavigation>}
       <Navigation />
-      <div class="flex-1 sm:pl-8 overflow-y-auto bg-[#F9FAFB] dark:bg-[#0F172A]">
+      <div class="flex-1 lg:pl-8 overflow-y-auto bg-[#F9FAFB] dark:bg-[#0F172A]">
         <Routes>
           <Route path='/' element={<About />} />
           <Route path='/projects' element={<Projects />} />
