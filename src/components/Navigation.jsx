@@ -15,13 +15,13 @@ const Navigation = () => {
     
     <> 
       {/* Desktop navigation */}
-      <nav class="dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-72 p-7 font-[Outfit] hidden 2xl:block">
+      <nav class="dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-72 p-7 font-[Outfit] hidden 2xl:block transition duration-600 ease-in-out">
         <h1 className=' mb-5 text-lg text-[#111827] dark:text-[#F1F5F9]'>Main</h1>
         <NavigationItem name={"About"} Icon={IoPerson} to={"/"}/>
         <NavigationItem name={"Projects"} Icon={AiFillCode} to={"/projects"}/>
         <NavigationItem name={"Skills"} Icon={AiFillRocket} to={"/skills"}/>
         
-        <hr className="border-t border-gray-300 dark:border-gray-700 mx-7 mb-5" />
+        <hr className="border-t border-gray-300 dark:border-gray-700 mx-7 mb-5 transition duration-600 ease-in-out" />
         <h1 className=' mb-5 text-lg text-[#111827] dark:text-[#F1F5F9]'>Social Links</h1>
 
         <LinkItem name={"Github"} Icon={FaGithub} link={"https://github.com/hquino1"}/>
