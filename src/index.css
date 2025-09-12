@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
 /* index.css */
 html,
 body,
@@ -9,4 +10,30 @@ body,
 
 body {
   transition: background-color 2s ease, color 2s ease;
+}
+
+/* Animated Gradient Background */
+ .light-theme {
+    background: linear-gradient(-45deg, #F9FAFB, #F1F5F9, #eceee9, #f6f6f4);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+}
+
+/* Dark theme animated gradient */
+.dark-theme {
+    background: linear-gradient(-45deg, #0a142c, #1a2d4b, #0a1630);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

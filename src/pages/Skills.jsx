@@ -1,16 +1,22 @@
+//import { ExperienceCard } from '../components/ExperienceCard';
+import { ExperienceCard } from "../components/ExperienceCard"
+import amazonLogo from '../assets/amazonLogo.jpg';
 function Skills() {
-
-  const aiTags = ["Deep Learning", "LLMs", "CNNs", "Classifiers"]
+  const bulletPoints = [
+    [
+      "Demonstrated foundational understanding of AWS core services, architecture best practices, and cloud security.",
+    ]
+  ] 
+  const aiTags = ["Amazon Web Services", "CI/CD Pipelines", "Docker", "Kubernetes"]
   const swTags = ["Waterfall", "Agile", "React", "Node.js", "Express.js", ".NET", "Docker"]
-  const csTags = ["Ransomware", "Web-Vulnerabilites", "Buffer Overflows", "Logging", "Input Validation"]
-  const rcTags = ["Data Structures & Algorithms", "Fundamental of Software Engineering", "Databases", "Programming Languages", "Computer Vision", "Secure Programming", "Artificial Intelligence", "Linear Algebra"]
+  const rcTags = ["Data Structures & Algorithms", "Fundamental of Software Engineering", "Databases", "Secure Programming", "Artificial Intelligence", "Linear Algebra"]
 
   return (
     <div className='text-[#111827] dark:text-[#F1F5F9] w-full h-full pr-0 pl-5 pt-30 pr-5 sm:px-10 md:px-20 lg:px-30 xl:p-30 overflow-auto transition duration-600 ease-in-out'> 
       <div className='flex flex-col md:flex-row items-center justify-center mb-20'> 
         <div className='flex flex-col md:flex-row gap-5'> 
 
-          <div className='dark:bg-[#1E293B] bg-[#E5E7EB] p-5 w-full md:w-[400px] rounded-lg transition duration-600 ease-in-out'> 
+          <div className='dark:bg-[#1E293B] bg-[#E5E7EB] border border-gray-500 shadow-lg p-5 w-full md:w-[400px] rounded-lg transition duration-600 ease-in-out'> 
             <div className='mb-3 font-[Montserrat] font-bold'> Software Development </div>
             <div className='flex mb-10 flex-wrap gap-2'> 
               {swTags.map((name, index) => (
@@ -18,16 +24,16 @@ function Skills() {
               ))} 
             </div>
 
-            <div className='mb-3 font-[Montserrat] font-bold'> Machine Learning & AI </div>
+            <div className='mb-3 font-[Montserrat] font-bold'> Dev Ops </div>
             <div className='flex mb-10 flex-wrap gap-2'> 
               {aiTags.map((name, index) => (
                 <div index={index} className='bg-[#F9FAFB] dark:bg-[#0F172A] h-[20px] w-auto rounded-lg flex text-xs justify-center p-3 items-center transition duration-600 ease-in-out'>{name}</div>
               ))} 
             </div> 
 
-            <div className='mb-3 font-[Montserrat] font-bold'> Cybersecurity </div>
+            <div className='mb-3 font-[Montserrat] font-bold'> Related Coursework </div>
             <div className='flex mb-10 flex-wrap gap-2'> 
-              {csTags.map((name, index) => (
+              {rcTags.map((name, index) => (
                 <div index={index} className='bg-[#F9FAFB] dark:bg-[#0F172A] h-[20px] w-auto rounded-lg flex text-xs justify-center p-3 items-center transition duration-600 ease-in-out'>{name}</div>
               ))} 
             </div>
@@ -36,7 +42,7 @@ function Skills() {
 
 
 
-          <div className='dark:bg-[#1E293B] bg-[#E5E7EB] p-5 rounded-lg transition duration-600 ease-in-out'> 
+          <div className='dark:bg-[#1E293B] bg-[#E5E7EB] border border-gray-500 shadow-lg p-5 rounded-lg transition duration-600 ease-in-out'> 
             <div className=''>
 
               <span className='flex transition duration-600 ease-in-out'> 
@@ -87,13 +93,9 @@ function Skills() {
 
       </div>
       <hr className="border-t border-gray-300 dark:border-gray-700 mx-7 mb-20 transition duration-600 ease-in-out" />
-      <h1 class="text-2xl mb-10 font-[Montserrat] font-bold"> Related Coursework </h1>
+      <h1 class="text-2xl mb-10 font-[Montserrat] font-bold"> Certificates </h1>
       <div className='flex items-center justify-center rounded-lg mb-20 transition duration-600 ease-in-out'>
-        <div className='dark:bg-[#1E293B] bg-[#E5E7EB] flex flex-wrap gap-2 p-5 w-[500px] rounded-lg transition duration-600 ease-in-out'> 
-          {rcTags.map((name, index) => (
-                  <div index={index} className='bg-[#F9FAFB] dark:bg-[#0F172A] h-[20px] w-auto rounded-lg flex text-xs justify-center p-3 items-center transition duration-600 ease-in-out'>{name}</div>
-          ))}
-        </div>
+        <ExperienceCard company={"Amazon Web Services"} role={"Cloud Practioner"} date={"Jul 2025 - Jul 2028"} image={amazonLogo} points={bulletPoints[0]}/>
       </div>
     </div>
   )
