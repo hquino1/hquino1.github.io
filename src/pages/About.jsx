@@ -13,16 +13,17 @@ function About() {
       "Resolved critical frontend and backend bugs, improving system stability, which reduced error rates and improved overall user experience."
     ],
     [
-      "Helped design backend architecture, by adding logging, auth, and system functionality.",
-      "Created reverse proxy servers for API accessibility, and proficient fetching mechanisms."
+      "Architected a cloud-native data masking workflow using EventBridge, AWS Lambda, and DataBrew to detect and protect sensitive user data across automated pipelines.",
+      "Deployed a lightweight NGINX-based proxy on AWS EC2 to enforce HTTPS/TLS encryption for secure communication between internal services and external endpoints.",
+      "Integrated Snowflake within a Nest.js backend to streamline data ingestion, implementing AWS KMS for secure, encrypted credential management and access control."
     ]
   ]
 
   return (
     <div class="text-[#111827] dark:text-[#F1F5F9] items-center w-full h-full pr-0 pl-5 pt-30 pr-5 sm:p-20 lg:p-30 xl:p-30 overflow-auto transition duration-600 ease-in-out">
       <div class="flex flex-col md:flex-row h-auto mb-20">
-        <div className="mr-15 mb-auto h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[300px] lg:w-[300px] xl:h-[400px] xl:w-[400px] rounded-lg outline-1 p-2 lg:p-5 flex-shrink-0">
-          <img src={headshot} className='object-cover h-full w-full rounded-lg'/>
+        <div className="dark:bg-[#1E293B] bg-[#E5E7EB] border-gray-500 mr-15 mb-auto h-[200px] w-[200px] sm:h-[250px] sm:w-[250px] lg:h-[300px] lg:w-[300px] xl:h-[400px] xl:w-[400px] rounded-2xl border p-2 lg:p-5 flex-shrink-0">
+          <img src={headshot} className='object-cover h-full w-full rounded-2xl border border-gray-700'/>
         </div>
         
         <div class="w-full lg:w-1/2 h-full mt-5 mr-10">

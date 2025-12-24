@@ -34,11 +34,11 @@ function App() {
 
   return (
     <div className='transition-colors duration-1000 w-full h-full bg-[#F9FAFB] dark:bg-[#0F172A] flex'>
-      <button className={`fixed dark:bg-[#334155] bg-[#D1D5DB] shadow-sm right-0 mt-5 mr-20 sm:mr-30 h-12 w-12 rounded-lg justify-center cursor-pointer 2xl:hidden z-60 text-[#111827] dark:text-[#F1F5F9]`} onClick={changeNav}>
+      <button className={`border border-gray-600 fixed dark:bg-[#334155] bg-[#D1D5DB] shadow-sm right-0 mt-5 mr-20 sm:mr-30 h-12 w-12 rounded-lg justify-center cursor-pointer 2xl:hidden z-60 text-[#111827] dark:text-[#F1F5F9]`} onClick={changeNav}>
         {!showNavbar && <TiThMenu className='mx-auto text-2xl'></TiThMenu>}
         {showNavbar && <IoClose className='mx-auto text-3xl'></IoClose>}
       </button>
-      <button className={`dark:bg-[#334155] bg-[#D1D5DB] shadow-sm p-1 rounded-full cursor-pointer fixed right-0 mt-5 mr-5 sm:mr-15 h-12 w-12 z-60 text-[#111827] dark:text-[#F1F5F9] flex items-center justify-center`} onClick={toggleDarkMode}>
+      <button className={`border border-gray-600 dark:bg-[#334155] bg-[#D1D5DB] shadow-sm p-1 rounded-full cursor-pointer fixed right-0 mt-5 mr-5 sm:mr-15 h-12 w-12 z-60 text-[#111827] dark:text-[#F1F5F9] flex items-center justify-center`} onClick={toggleDarkMode}>
           {!isDark && <MdNightlight size={22}></MdNightlight>}
           {isDark && <MdLightMode size={22}></MdLightMode>}
       </button>

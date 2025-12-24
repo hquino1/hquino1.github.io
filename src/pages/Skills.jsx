@@ -7,8 +7,8 @@ function Skills() {
       "Demonstrated foundational understanding of AWS core services, architecture best practices, and cloud security.",
     ]
   ] 
-  const aiTags = ["Amazon Web Services", "CI/CD Pipelines", "Docker", "Kubernetes"]
-  const swTags = ["Waterfall", "Agile", "React", "Node.js", "Express.js", ".NET", "Docker"]
+  const aiTags = ["Amazon Web Services", "Microsoft Azure", "Google Cloud Services", "CI/CD Pipelines", "Docker", "Kubernetes"]
+  const swTags = ["React", "Next.js","Node.js", "Express.js", ".NET", "Nest.js", "FastAPI"]
   const rcTags = ["Data Structures & Algorithms", "Fundamental of Software Engineering", "Databases", "Secure Programming", "Artificial Intelligence", "Linear Algebra"]
 
   return (
@@ -79,10 +79,10 @@ function Skills() {
 
               <span className='flex'> 
                 <h1 className='font-[Montserrat] font-bold'> Typescript </h1>
-                <h1 className='font-bold font-[Montserrat] ml-auto'> 70% </h1>
+                <h1 className='font-bold font-[Montserrat] ml-auto'> 90% </h1>
               </span>
               <div className='bg-[#F9FAFB] dark:bg-[#0F172A] w-full md:w-[200px] h-[10px] rounded-xl mt-2 transition duration-600 ease-in-out'> 
-                <div className='h-full w-7/10 bg-black dark:bg-white rounded-lg transition duration-600 ease-in-out'> </div>
+                <div className='h-full w-9/10 bg-black dark:bg-white rounded-lg transition duration-600 ease-in-out'> </div>
               </div>
 
 
