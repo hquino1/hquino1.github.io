@@ -26,7 +26,7 @@ const LimitedNavigation = ({isVisible}) => {
 
         <LinkItem name={"Github"} Icon={FaGithub} link={"https://github.com/hquino1"}/>
         <LinkItem name={"LinkedIn"} Icon={FaLinkedin} link={"https://linkedin.com/in/hectorquino"}/>
-        <LinkItem name={"Resume"} Icon={IoIosPaper} link={"https://github.com/hquino1/portfolio-content/blob/main/Hector_Quinones_Resume.pdf"}/>
+        <LinkItem name={"Resume"} Icon={IoIosPaper} link={"https://hquino1.github.io/portfolio-content/HQ_Resume.pdf"}/>
       </nav>
 
     </>
