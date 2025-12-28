@@ -42,7 +42,7 @@ function About() {
       <div class="h-auto flex flex-col md:flex-row mb-20 items-center md:items-stretch"> 
         <div className='h-auto w-100 flex-col'> 
           <img src={logo} className='w-50 h-50 mx-auto mb-5'></img>
-          <div className='w-fit h-6 pl-3 pr-3 rounded-xl mx-auto dark:bg-[#1E293B] bg-[#E5E7EB] text-center justify-center items-center text-sm flex transition duration-600 ease-in-out'>3.8 GPA</div>
+          <div className='border border-gray-600 w-fit h-6 pl-3 pr-3 rounded-xl mx-auto dark:bg-[#1E293B] bg-[#E5E7EB] text-center justify-center items-center text-sm flex transition duration-600 ease-in-out'>3.8 GPA</div>
         </div>
 
         <div className='h-1/2 w-full md:ml-10 mt-5'>

@@ -34,14 +34,9 @@ function Projects() {
     preloadImages();
   }, [screenshots]);
   const projectTags = [
-        { title: 'Movie Tracklist Database', tags: ['Next.js', 'Firebase', 'Spotify API', 'TMDB API'], info: "Developed a full-stack app for reviewing and scoring movie soundtracks. Designed an algorithm to enhance soundtrack accuracy using Spotify's API, achieving 87% accuracy for trending movies. Integrated Cloud Firestore to manage user data and display insightful movie infographics."},
+        { title: 'Movie Tracklist Database', tags: ['Next.js', 'Firebase', 'Spotify API', 'TMDB API'], info: "Developed a full-stack app for reviewing and scoring movie soundtracks. Designed an algorithm to enhance soundtrack accuracy using Spotify's API, achieving 87% accuracy for trending movies. Integrated Cloud Firestore to manage user data and display insightful movie infographics.", link: "https://github.com/hquino1/Movie-Scene-Tracklist.git"},
         { title: 'Online Messaging App', tags: ['React', 'Express.js', 'MongoDB', 'Node.js'], info: "Developed a real-time communication platform using the MERN stack, enabling seamless interaction between online users. Implemented JWT authentication for a personalized and secure experience. Built an Express.js API to handle messaging, friend management, and real-time data transfer via Socket.IO."},
         { title: 'Social Media Application', tags: ['ASP.NET', 'Next.js', 'DynamoDB', 'AWS'], info: "Designed and developed a full-stack social media app with Next.js for a responsive frontend and ASP.NET for the backend API. Optimized performance with DynamoDB for low-latency data management and leveraged AWS S3 with pre-signed URLs for secure file uploads."},
-        { title: 'Weather Application', tags: ['Javascript', 'HTML/CSS', 'OpenWeatherMap API'], info: "Developed a weather app that displays temperature, climate, and atmospheric conditions for cities worldwide. Integrated OpenWeatherMap API for real-time data and implemented dynamic backgrounds that adapt to different weather conditions."},
-        { title: 'Fat 32 File Access', tags: ['Low-Level', 'C', 'Linux'], info: "Developed a FAT32 image reader capable of accessing and parsing file system structures. Implemented functionality to navigate directories, read file contents, and extract metadata, enabling efficient interaction with FAT32 disk images."},
-        { title: 'Custom Linux Shell', tags: ['Low-Level', 'C', 'Linux'], info: "Developed a custom Linux shell using fork() and exec(), enabling command execution, process management, and basic shell functionalities. Implemented features like input parsing and concurrent process handling for an interactive user experience."},
-        { title: 'Custom Memory Allocator', tags: ['Low-Level', 'C', 'Linux'], info: "Developed a custom memory allocator managing dynamic memory allocation with malloc(), free(), and realloc() equivalents. Implemented strategies like free list management and block coalescing to optimize memory usage and reduce fragmentation."},
-        { title: 'OS Optimization', tags: ['Low-Level', 'C', 'Linux'], info: "Modified a Round Robin scheduler to implement a Priority Scheduling algorithm, ensuring processes are executed based on priority levels. Integrated dynamic priority adjustments and starvation prevention to optimize CPU scheduling efficiency."},
   ];
 
   const handleNavigation = (direction) => {
@@ -93,7 +88,7 @@ function Projects() {
           </div>
           
           {/* Map of Screenshots */}
-          <div className='dark:bg-[#1E293B] bg-[#E5E7EB] flex h-auto w-[300px] border border-gray-500 dark:border-gray-100 rounded-2xl p-1 overflow-hidden items-center justify-center relative'>
+          <div className='dark:bg-[#1E293B] bg-[#E5E7EB] flex h-auto w-[300px] border border-gray-500 rounded-2xl p-2 overflow-hidden items-center justify-center relative'>
             {!imagesLoaded && (
               <div className="flex items-center justify-center h-32">
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-600 dark:border-gray-300"></div>
@@ -103,7 +98,7 @@ function Projects() {
               <img 
                 key={index}
                 src={screenshot} 
-                className={`rounded-2xl transition-all duration-250 ease-in-out max-h-full max-w-full ${
+                className={`border border-gray-700 rounded-2xl transition-all duration-250 ease-in-out max-h-full max-w-full ${
                   index === currentIndex 
                     ? (isAnimating ? 'opacity-0 scale-95' : 'opacity-100 scale-100')
                     : 'opacity-0 scale-95'
@@ -131,7 +126,7 @@ function Projects() {
       <h1 class="text-2xl mb-10 font-[Montserrat] font-bold"> Previous Projects </h1>
       <ul className='flex flex-wrap md:flex-col gap-5 md:justify-center lg:items-center'> 
         {projectTags.map((project, index) => (
-          <li key={index} className='mb-5'> <ProjectItem name={project.title} info={project.info} tags={project.tags} /> </li>
+          <li key={index} className='mb-5'> <ProjectItem name={project.title} info={project.info} tags={project.tags} link={project.link}/> </li>
         ))}
       </ul>
     </div>

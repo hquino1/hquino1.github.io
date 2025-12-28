@@ -15,7 +15,7 @@ const LimitedNavigation = ({isVisible}) => {
     
     <> 
       {/* Desktop navigation */}
-      <nav className={`dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-64 py-7 px-4 font-[Outfit] z-50 fixed transition-transform duration-700 ease-in-out ${isVisible ? 'translate-x-0' : '-translate-x-full'}`}>
+      <nav className={`dark:bg-[#1E293B] bg-[#E5E7EB] h-full w-64 py-7 px-2 font-[Outfit] z-50 fixed transition-transform duration-700 ease-in-out ${isVisible ? 'translate-x-0' : '-translate-x-full'}`}>
         <h1 className=' mb-5 text-lg text-[#111827] dark:text-[#F1F5F9]'>Main</h1>
         <NavigationItem name={"About"} Icon={IoPerson} to={"/"}/>
         <NavigationItem name={"Projects"} Icon={AiFillCode} to={"/projects"}/>
